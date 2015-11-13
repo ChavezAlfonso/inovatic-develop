@@ -1,0 +1,46 @@
+<div class="profile collapsable" ng-if="!vm.loading">
+  <collapse-content></collapse-content>
+  <div class="profile__head" ng-class="{enabled: vm.enableGoBack == true}">
+    <a ui-sref="search" class="profile__back" ng-click="vm.goBack()" ng-if="vm.enableGoBack">
+      <span class="icon-long-arrow-left"></span>
+    </a>
+    <div class="profile__picture" style="background-image: url({{vm.profile.picture_url}});"></div>
+    <h1>{{vm.profile.name}}</h1>
+    <div class="profile__meta">
+      <span ng-if="vm.profile.type == 'facilitator'" class="profile__type">Dinamizador</span>
+      <span ng-if="vm.profile.type == 'entrepreneur'" class="profile__type">Innovador</span>
+      <span class="profile__old">
+        Miembro desde {{vm.profile.created_at | amDateFormat: 'MMMM YYYY'}}
+      </span>
+    </div>
+    <div class="social-links">
+      <a title="{{vm.profile.site}}" target="_blank" ng-href="{{vm.profile.site}}" ng-if="vm.profile.site">
+        <span class="icon-anchor"></span> {{vm.profile.site}}
+      </a>
+      <a title="{{vm.profile.twitter}}" target="_blank" ng-href="{{vm.profile.twitter}}" ng-if="vm.profile.twitter">
+        <span class="icon-twitter"></span> {{vm.profile.twitter}}
+      </a>
+      <a title="{{vm.profile.linkedin}}" target="_blank" ng-href="{{vm.profile.linkedin}}" ng-if="vm.profile.linkedin">
+        <span class="icon-linkedin"></span> {{vm.profile.linkedin}}
+      </a>
+    </div>
+    <div class="profile__actions">
+      <button type="button" class="btn btn-primary btn-sm" ng-click="vm.handleAddUser(vm.profile.id, vm.profile.name)">
+        <span class="icon-plus"></span> Agregar
+      </button>
+      <!-- button type="button" class="btn btn-primary btn-sm" ng-click="vm.handleMessage(vm.profile)">
+        <span class="icon-message"></span> Mensaje
+      </button -->
+    </div>
+  </div>
+  <div class="profile__tabs">
+    <a class="profile__tabs__tab single" ui-sref="profile" ng-class="{active: vm.state.current.name == 'profile'}">Perfil</a>
+    <!-- a class="profile__tabs__tab" ui-sref="profile.portfolio" ng-class="{active: vm.state.current.name == 'profile.portfolio'}">Cartera</a -->
+    <!-- a class="profile__tabs__tab" ui-sref="profile.network" ng-class="{active: vm.state.current.name == 'profile.network'}">Red</a -->
+  </div>
+  <div class="profile__content">
+    <ui-view>
+      <profile-about profile="vm.profile"></profile-about>
+    </ui-view>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+.user-menu {
+  padding: 0 15px 0 10px;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+
+  &__item {
+    padding: 0 10px;
+    display: table-cell;
+    position: relative;
+    min-width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .icon {
+    color: $white;
+  }
+
+  .icon-bolt {
+    font-size: 20px;
+  }
+
+  .icon-bell {
+    font-size: 18px;
+  }
+
+  .icon-inbox {
+    font-size: 15px;
+  }
+
+  .triangle {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -2px;
+    top: 50%;
+    right: 0;
+    @include triangle(12px, $white, down);
+  }
+
+  &__picture {
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    @include cover-background;
+  }
+}
+
+.user-actions {
+  text-align: center;
+
+  button {
+    background: transparent;
+    border: 0;
+    color: $white;
+    font-size: 14px;
+  }
+}

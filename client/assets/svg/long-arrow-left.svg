@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="13px" viewBox="0 0 14 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>long-arrow-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Public" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Search" sketch:type="MSArtboardGroup" transform="translate(-80.000000, -171.000000)" fill="#9B9B9B">
+            <g id="Details" sketch:type="MSLayerGroup" transform="translate(60.000000, 144.000000)">
+                <g id="Head" transform="translate(0.000000, 1.000000)" sketch:type="MSShapeGroup">
+                    <path d="M26.1752573,38.4096408 L27.8363301,36.7564515 L24.5414369,33.4457913 L34,33.4457913 L34,30.9638495 L24.5414369,30.9638495 L27.8363301,27.6531893 L26.1752573,26 L20,32.2048204 L26.1752573,38.4096408 L26.1752573,38.4096408 Z" id="long-arrow-left"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

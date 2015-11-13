@@ -1,0 +1,19 @@
+<p ng-if="vm.loading">Cargando...</p>
+
+<div class="portfolio" ng-if="!vm.loading">
+  <div class="portfolio__item" ng-repeat="portfolioItem in vm.portfolio">
+    <div class="portfolio__item__picture" style="background-image: url({{portfolioItem.image_url}});"></div>
+    <div class="portfolio__item__main">
+      <h5>{{portfolioItem.name}}</h5>
+      <div class="portfolio__item__meta">
+        <span class="portfolio__item__type">{{portfolioItem.type}}</span>
+        <span class="portfolio__item__date">{{portfolioItem.date}}</span>
+      </div>
+      <p>{{portfolioItem.description}}</p>
+      <div class="portfolio__item__tags">
+        <span class="label label-border-blue" ng-repeat="tag in portfolioItem.tags">{{tag}}</span>
+      </div>
+      <a class="btn btn-sm btn-default btn-block" ng-href="{{portfolioItem.more_link}}">¡Saber Más!</a>
+    </div>
+  </div>
+</div>

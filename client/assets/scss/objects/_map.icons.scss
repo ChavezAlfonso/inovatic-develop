@@ -1,0 +1,97 @@
+.map-icon {
+  width: 28px;
+  height: 28px;
+  background: #BA68C8;
+  border: 2px solid #AA52BA;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+  color: $white;
+  text-align: center;
+  line-height: 19px;
+
+  &__gov {
+    background: $gov;
+    border-color: darken($gov, 15%);
+    font-size: 17px;
+  }
+
+  &__incubator {
+    background: $incubator;
+    border-color: darken($incubator, 10%);
+    font-size: 19px;
+  }
+
+  &__vcfund {
+    background: $vcfund;
+    border-color: darken($vcfund, 10%);
+    font-size: 19px;
+  }
+
+  &__foundation {
+    background: $foundation;
+    border-color: darken($foundation, 10%);
+    font-size: 13px;
+  }
+
+  &__academy {
+    background: $academy;
+    border-color: darken($academy, 10%);
+    font-size: 18px;
+  }
+
+  &__event {
+    background: $event;
+    border-color: darken($event, 10%);
+    font-size: 18px;
+  }
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 5px;
+
+  .leaflet-popup-close-button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.pin-popup {
+  text-align: center;
+
+  &__picture {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    @include cover-background;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    font-family: Poppins;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 100;
+    color: $gray;
+    line-height: 19px;
+    font-family: Poppins;
+  }
+
+  a {
+    margin: 0px 3px;
+    color: $red;
+    text-decoration: none;
+    font-family: Poppins;
+
+    &:focus, &:hover {
+      text-decoration: none;
+      color: darken($red, 10%);
+    }
+  }
+}

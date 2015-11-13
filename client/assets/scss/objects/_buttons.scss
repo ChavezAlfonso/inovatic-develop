@@ -1,0 +1,4 @@
+.btn-white-border {
+  @include button-variant($white, transparent, rgba(255, 255, 255, .5));
+  text-shadow: none;
+}

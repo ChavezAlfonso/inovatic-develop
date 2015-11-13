@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="15px" viewBox="0 0 13 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>funnel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Public" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Search" sketch:type="MSArtboardGroup" transform="translate(-1334.000000, -158.000000)" fill="#9B9B9B">
+            <g id="Filters" sketch:type="MSLayerGroup" transform="translate(1320.000000, 145.000000)">
+                <path d="M14,13 L27,13 L21.7141243,21.9531607 L21.7141243,27.235443 L19.2627258,25.4402914 L19.2627258,21.9531607 L14,13 Z" id="funnel" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

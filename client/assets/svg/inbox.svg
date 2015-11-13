@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>inbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Public" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Search" sketch:type="MSArtboardGroup" transform="translate(-1276.000000, -88.000000)" fill="#FFFFFF">
+            <g id="Header" sketch:type="MSLayerGroup" transform="translate(40.000000, 65.000000)">
+                <g id="Group" transform="translate(1176.000000, 15.000000)" sketch:type="MSShapeGroup">
+                    <path d="M71.4439848,8 L67.8061086,8 L67.8061086,12.4162397 L65.9675,12.4162397 L69.625,16.0800473 L73.2825,12.4162397 L71.4439381,12.4162397 L71.4439381,8 L71.4439848,8 Z M79.25,15.1441329 L79.25,22.3102257 L60,22.3102257 L60,15.1441329 L64.3930649,8.00004672 L66.5593441,8.00004672 L62.1941729,15.1441329 L64.6119169,15.1441329 L66.2980674,17.0407251 L72.9284775,17.0407251 L74.6614448,15.1441329 L77.057696,15.1441329 L72.6801432,8.00004672 L74.8752506,8.00004672 L79.25,15.1441329 L79.25,15.1441329 Z" id="inbox"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

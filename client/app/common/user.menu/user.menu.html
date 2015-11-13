@@ -1,0 +1,48 @@
+<div class="user-menu" ng-if="vm.isLoggedIn()">
+  <div class="user-menu__item" uib-dropdown>
+    <div class="user-menu__item__pull" uib-dropdown-toggle>
+      <span class="icon icon-bolt"></span>
+    </div>
+    <!-- div class="uib-dropdown-menu dropdown-menu-right">
+      <h6>Red</h6>
+      <p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div -->
+  </div>
+  <div class="user-menu__item" uib-dropdown>
+    <div class="user-menu__item__pull" uib-dropdown-toggle>
+      <span class="icon icon-bell"></span>
+    </div>
+    <div class="uib-dropdown-menu dropdown-menu-right">
+      <h6>Notificaciones</h6>
+      <p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  <div class="user-menu__item" uib-dropdown>
+    <div class="user-menu__item__pull" uib-dropdown-toggle>
+      <span class="icon icon-inbox"></span>
+    </div>
+    <div class="uib-dropdown-menu dropdown-menu-right">
+      <h6>Inbox</h6>
+      <p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  <div class="user-menu__item" uib-dropdown>
+    <div class="user-menu__item__pull" uib-dropdown-toggle>
+      <div class="user-menu__picture" style="background-image: url({{ vm.gravatar() }});"></div>
+      <span class="triangle"></span>
+    </div>
+    <ul class="uib-dropdown-menu dropdown-menu-right">
+      <li>
+        <a href="" ng-click="vm.doStuff()">Perfil</a>
+      </li>
+      <li>
+        <a href="" ng-click="vm.logout()">Cerrar sesión</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="user-actions" ng-if="!vm.isLoggedIn()">
+  <button class="user-actions__login" ng-click="vm.openLoginModal()">Iniciar</button>
+  <button class="user-actions__signup" ng-click="vm.openSignupModal()">Registrate</button>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="13px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Public" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Search" sketch:type="MSArtboardGroup" transform="translate(-530.000000, -182.000000)" fill="#9B9B9B">
+            <g id="Details" sketch:type="MSLayerGroup" transform="translate(60.000000, 144.000000)">
+                <g id="Collapse" transform="translate(460.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <path d="M16.1752573,50.4096408 L17.8363301,48.7564515 L14.5414369,45.4457913 L13.9849854,44.0325317 L14.5414369,42.9638495 L17.8363301,39.6531893 L16.1752573,38 L10,44.2048204 L16.1752573,50.4096408 L16.1752573,50.4096408 Z" id="arrow-left"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

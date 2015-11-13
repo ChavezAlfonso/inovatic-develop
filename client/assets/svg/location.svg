@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="13px" viewBox="0 0 11 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>location</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Public" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Search" sketch:type="MSArtboardGroup" transform="translate(-81.000000, -207.000000)" fill="#4A4A4A">
+            <g id="Results" sketch:type="MSLayerGroup" transform="translate(60.000000, 144.000000)">
+                <g id="Search-Info" sketch:type="MSShapeGroup">
+                    <g id="Near-Me" transform="translate(21.000000, 60.000000)">
+                        <path d="M5.5,3 C2.46240059,3 0,5.31630097 0,8.17360437 C0,11.0751214 2.674273,12.9889865 5.5,15.65 C8.325727,12.9889865 11,11.0751214 11,8.17360437 C11,5.31630097 8.53759941,3 5.5,3 L5.5,3 Z M5.5,11.810725 C3.27143917,11.810725 1.46476261,10.1112958 1.46476261,8.01498811 C1.46476261,5.91864976 3.27143917,4.21925121 5.5,4.21925121 C7.72862611,4.21925121 9.53523739,5.91864976 9.53523739,8.01498811 C9.53523739,10.1112958 7.72862611,11.810725 5.5,11.810725 L5.5,11.810725 Z" id="location"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

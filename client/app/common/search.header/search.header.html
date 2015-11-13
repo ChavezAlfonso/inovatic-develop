@@ -1,0 +1,16 @@
+<div class="search-header">
+  <div class="search-header__brand">
+    <a ui-sref="search({})" title="Hecho En MX">
+      <span class="icon-logo"></span>
+    </a>
+  </div>
+  <div class="search-header__form">
+    <form ng-submit="vm.makeSearch()">
+      <span class="icon icon-magnifier"></span>
+      <input id="main-map-search" type="text" placeholder="Busca convocatorias, startups, ..." ng-model="vm.query" ng-focus="true">
+    </form>
+  </div>
+  <div class="search-header__user">
+    <user-menu></user-menu>
+  </div>
+</div>

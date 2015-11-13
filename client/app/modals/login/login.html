@@ -1,0 +1,22 @@
+<div class="session-modal">
+  <form ng-submit="vm.login()">
+    <div class="session-modal__head">
+      <h2>¡Bienvenido de nuevo!</h2>
+      <p>¿No tienes cuenta? <a href="" ng-click="vm.register()">Registrate aquí</a></p>
+    </div>
+    <div class="form-inputs-group">
+      <div class="form-inputs-group-row form-inputs-group-row-icon">
+        <span class="icon icon-user-outline"></span>
+        <input type="text" placeholder="Correo electrónico" ng-model="vm.email">
+      </div>
+      <div class="form-inputs-group-row form-inputs-group-row-icon">
+        <span class="icon icon-key-outline"></span>
+        <input type="password" placeholder="Contraseña" ng-model="vm.password">
+      </div>
+    </div>
+    <div class="session-modal__forgot">
+      <a href="">¿Olvidaste tu contraseña?</a>
+    </div>
+    <button type="submit" class="btn btn-block btn-white-border">Iniciar Sesión</button>
+  </form>
+</div>

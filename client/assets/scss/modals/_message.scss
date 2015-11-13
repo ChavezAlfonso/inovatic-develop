@@ -1,0 +1,26 @@
+.message-modal {
+  padding: 30px;
+  background: $red;
+  border-radius: $border-radius-large - 1px;
+
+  &__header {
+    margin-bottom: 30px;
+    text-align: center;
+
+    h3 {
+      margin: 0;
+      font-size: 19px;
+      font-weight: 500;
+      color: $white;
+      line-height: 31px;
+    }
+
+    p {
+      color: tint($red, 70%);
+    }
+  }
+
+  &__actions {
+    margin-top: 20px;
+  }
+}

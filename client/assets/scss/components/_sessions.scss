@@ -1,0 +1,50 @@
+.modal-medium {
+  width: 350px;
+}
+
+.session-modal {
+  padding: 30px;
+  background: $red;
+  border-radius: $border-radius-large - 1px;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 500;
+    color: $white;
+    line-height: 31px;
+  }
+
+  &__head {
+    margin-bottom: 15px;
+
+    p {
+      color: tint($red, 70%);
+
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__forgot {
+    margin: 10px 0 15px 0;
+    text-align: left;
+
+    a {
+      color: tint($red, 70%);
+      font-size: 11px;
+    }
+  }
+
+  &__instructions {
+    margin: 10px 0 15px 0;
+
+    p {
+      color: tint($red, 70%);
+      font-size: 12px;
+    }
+  }
+}

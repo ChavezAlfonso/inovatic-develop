@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "IconFont";
+  src: url('/assets/IconFont.eot');
+  src: url('/assets/IconFont.eot?#iefix') format('eot'),
+    url('/assets/IconFont.woff') format('woff'),
+    url('/assets/IconFont.ttf') format('truetype'),
+    url('/assets/IconFont.svg#IconFont') format('svg');
+}
+
+@mixin icon-styles {
+  font-family: "IconFont";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+  text-decoration: none;
+  text-transform: none;
+  vertical-align: middle;
+}
+
+%icon {
+  @include icon-styles;
+}
+
+@function icon-char($filename) {
+  $char: "";
+
+  @if $filename == academy {
+    $char: "\E001";
+  }
+  @if $filename == anchor {
+    $char: "\E002";
+  }
+  @if $filename == arrow-left {
+    $char: "\E003";
+  }
+  @if $filename == arrow-right {
+    $char: "\E004";
+  }
+  @if $filename == bell {
+    $char: "\E005";
+  }
+  @if $filename == bill {
+    $char: "\E006";
+  }
+  @if $filename == bolt {
+    $char: "\E007";
+  }
+  @if $filename == building {
+    $char: "\E008";
+  }
+  @if $filename == calendar {
+    $char: "\E009";
+  }
+  @if $filename == code-sheet {
+    $char: "\E00A";
+  }
+  @if $filename == event {
+    $char: "\E00B";
+  }
+  @if $filename == foundation {
+    $char: "\E00C";
+  }
+  @if $filename == funnel {
+    $char: "\E00D";
+  }
+  @if $filename == gov {
+    $char: "\E00E";
+  }
+  @if $filename == inbox {
+    $char: "\E00F";
+  }
+  @if $filename == incubator {
+    $char: "\E010";
+  }
+  @if $filename == info {
+    $char: "\E011";
+  }
+  @if $filename == key-outline {
+    $char: "\E012";
+  }
+  @if $filename == lightbulb {
+    $char: "\E013";
+  }
+  @if $filename == linkedin {
+    $char: "\E014";
+  }
+  @if $filename == location {
+    $char: "\E015";
+  }
+  @if $filename == logo {
+    $char: "\E016";
+  }
+  @if $filename == long-arrow-left {
+    $char: "\E017";
+  }
+  @if $filename == magnifier {
+    $char: "\E018";
+  }
+  @if $filename == message {
+    $char: "\E019";
+  }
+  @if $filename == newspaper {
+    $char: "\E01A";
+  }
+  @if $filename == plus {
+    $char: "\E01B";
+  }
+  @if $filename == rocket {
+    $char: "\E01C";
+  }
+  @if $filename == star {
+    $char: "\E01D";
+  }
+  @if $filename == tachometer {
+    $char: "\E01E";
+  }
+  @if $filename == twitter {
+    $char: "\E01F";
+  }
+  @if $filename == user-outline {
+    $char: "\E020";
+  }
+  @if $filename == vcfund {
+    $char: "\E021";
+  }
+
+  @return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+  &:#{$insert} {
+    @if $extend {
+      @extend %icon;
+    } @else {
+      @include icon-styles;
+    }
+    content: icon-char($filename);
+  }
+}
+
+.icon-academy {
+  @include icon(academy);
+}
+.icon-anchor {
+  @include icon(anchor);
+}
+.icon-arrow-left {
+  @include icon(arrow-left);
+}
+.icon-arrow-right {
+  @include icon(arrow-right);
+}
+.icon-bell {
+  @include icon(bell);
+}
+.icon-bill {
+  @include icon(bill);
+}
+.icon-bolt {
+  @include icon(bolt);
+}
+.icon-building {
+  @include icon(building);
+}
+.icon-calendar {
+  @include icon(calendar);
+}
+.icon-code-sheet {
+  @include icon(code-sheet);
+}
+.icon-event {
+  @include icon(event);
+}
+.icon-foundation {
+  @include icon(foundation);
+}
+.icon-funnel {
+  @include icon(funnel);
+}
+.icon-gov {
+  @include icon(gov);
+}
+.icon-inbox {
+  @include icon(inbox);
+}
+.icon-incubator {
+  @include icon(incubator);
+}
+.icon-info {
+  @include icon(info);
+}
+.icon-key-outline {
+  @include icon(key-outline);
+}
+.icon-lightbulb {
+  @include icon(lightbulb);
+}
+.icon-linkedin {
+  @include icon(linkedin);
+}
+.icon-location {
+  @include icon(location);
+}
+.icon-logo {
+  @include icon(logo);
+}
+.icon-long-arrow-left {
+  @include icon(long-arrow-left);
+}
+.icon-magnifier {
+  @include icon(magnifier);
+}
+.icon-message {
+  @include icon(message);
+}
+.icon-newspaper {
+  @include icon(newspaper);
+}
+.icon-plus {
+  @include icon(plus);
+}
+.icon-rocket {
+  @include icon(rocket);
+}
+.icon-star {
+  @include icon(star);
+}
+.icon-tachometer {
+  @include icon(tachometer);
+}
+.icon-twitter {
+  @include icon(twitter);
+}
+.icon-user-outline {
+  @include icon(user-outline);
+}
+.icon-vcfund {
+  @include icon(vcfund);
+}

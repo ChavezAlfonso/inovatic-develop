@@ -1,0 +1,16 @@
+<div class="message-modal">
+  <div class="message-modal__header">
+    <h3>Enviar Mensaje</h3>
+    <p>Enviar mensaje a {{vm.user.name}}</p>
+  </div>
+  <form ng-submit="vm.handleMessageSubmit()">
+    <div class="form-inputs-group">
+      <div class="form-inputs-group-row">
+        <textarea rows="5" placeholder="Escribe tu mensaje..." ng-model="vm.message"></textarea>
+      </div>
+    </div>
+    <div class="message-modal__actions">
+      <button type="submit" class="btn btn-block btn-white-border">Enviar</button>
+    </div>
+  </form>
+</div>

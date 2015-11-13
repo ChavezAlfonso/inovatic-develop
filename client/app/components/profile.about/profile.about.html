@@ -1,0 +1,19 @@
+<div class="profile-about">
+  <section>
+    <h5>Acerca de {{vm.profile.name}}</h5>
+    <p>{{vm.profile.description}}</p>
+  </section>
+  <section>
+    <h5>Áreas de experiencia</h5>
+    <span
+      class="label label-border-blue"
+      ng-repeat="area in vm.profile.expertise_areas"
+    >
+      {{area}}
+    </span>
+  </section>
+  <section>
+    <h5>Ubicación</h5>
+    <p>{{vm.profile.address}}</p>
+  </section>
+</div>

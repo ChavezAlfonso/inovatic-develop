@@ -1,0 +1,58 @@
+<div class="onboarding">
+  <div class="onboarding__header">
+    <span class="icon-logo"></span>
+    <h5>¡Forma parte del ecosistema emprendedor!</h5>
+  </div>
+  <div class="onboarding__body">
+    <div class="onboarding-section" ng-if="vm.step === 1">
+      <h2>¿Quién eres?</h2>
+      <div class="onbarding-options">
+        <div class="onbarding-options__option" ng-click="vm.handleProfileChoice('entrepreneur')">
+          <span class="icon icon-lightbulb" style="font-size: 80px;"></span>
+          <h4>Innovador</h4>
+        </div>
+        <div class="onbarding-options__option" ng-click="vm.handleProfileChoice('facilitator')">
+          <span class="icon icon-rocket" style="font-size: 80px;"></span>
+          <h4>Dinamizador</h4>
+        </div>
+      </div>
+    </div>
+    <div class="onboarding-section" ng-if="vm.step === 2">
+      <h2>¿En que estás interesado?</h2>
+      <div class="onbarding-options">
+        <div class="onbarding-options__option" ng-click="vm.handleInterestedInChoice('incubators')">
+          <span class="icon icon-tachometer" style="font-size: 45px;"></span>
+          <h4>Incubación/Aceleración</h4>
+        </div>
+        <div class="onbarding-options__option" ng-click="vm.handleInterestedInChoice('calls')">
+          <span class="icon icon-newspaper" style="font-size: 45px;"></span>
+          <h4>Convocatorias/Apoyos</h4>
+        </div>
+        <div class="onbarding-options__option" ng-click="vm.handleInterestedInChoice('founding')">
+          <span class="icon icon-bill" style="font-size: 40px;"></span>
+          <h4>Inversión/Financiamiento</h4>
+        </div>
+      </div>
+      <div class="onbarding-options">
+        <div class="onbarding-options__option" ng-click="vm.handleInterestedInChoice('associations')">
+          <span class="icon icon-building"></span>
+          <h4>Cámaras TIC y Asociaciones</h4>
+        </div>
+        <div class="onbarding-options__option" ng-click="vm.handleInterestedInChoice('training')">
+          <span class="icon icon-code-sheet"></span>
+          <h4>Formación/Capacitación</h4>
+        </div>
+        <div class="onbarding-options__option" ng-click="vm.handleInterestedInChoice('events')">
+          <span class="icon icon-calendar"></span>
+          <h4>Actividades y Eventos</h4>
+        </div>
+      </div>
+    </div>
+    <div class="onboarding-section onboarding-section--search" ng-if="vm.step === 3">
+      <h2>¿Que estás buscando?</h2>
+      <form ng-submit="vm.handleQuerySearch()">
+        <input type="text" placeholder="Ingresa tu busqueda..." ng-model="vm.query" ng-focus="vm.step === 3" />
+      </form>
+    </div>
+  </div>
+</div>

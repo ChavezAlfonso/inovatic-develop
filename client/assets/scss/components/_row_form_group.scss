@@ -1,0 +1,43 @@
+.form-inputs-group {
+  background: $white;
+  border: 1px solid #EEEFF2;
+  border-radius: 3px;
+
+  &-row {
+    border-top: 1px solid $separator;
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    input, textarea {
+      padding: 14px 10px 10px 10px;
+      display: block;
+      width: 100%;
+      background: transparent;
+      border: 0;
+      outline: none;
+    }
+
+    textarea {
+
+    }
+
+    &-icon {
+      position: relative;
+
+      .icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        color: $gray;
+      }
+
+      input {
+        padding-left: 35px;
+      }
+    }
+  }
+}

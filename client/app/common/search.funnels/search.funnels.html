@@ -1,0 +1,67 @@
+<div class="search-funnels">
+  <div
+    class="search-funnels__button"
+    ng-click="vm.openFunnels()"
+    ng-class="{active: vm.isAtLeastOneActive()}"
+  >
+    <span class="icon-funnel"></span>
+  </div>
+  <div class="search-funnels__body" ng-if="vm.open">
+    <ul class="search-funnels__list">
+      <li>
+        <label ng-class="{active: vm.filters.incubators}">
+          <input
+            type="checkbox"
+            ng-model="vm.filters.incubators"
+            ng-change="vm.handleFunnel('incubators')"
+          > Incubación/Aceleración
+        </label>
+      </li>
+      <li>
+        <label ng-class="{active: vm.filters.calls}">
+          <input
+            type="checkbox"
+            ng-model="vm.filters.calls"
+            ng-change="vm.handleFunnel('calls')"
+          > Convocatorias/Apoyos
+        </label>
+      </li>
+      <li>
+        <label ng-class="{active: vm.filters.founding}">
+          <input
+            type="checkbox"
+            ng-model="vm.filters.founding"
+            ng-change="vm.handleFunnel('founding')"
+          > Inversión/Financiamiento
+        </label>
+      </li>
+      <li>
+        <label ng-class="{active: vm.filters.associations}">
+          <input
+            type="checkbox"
+            ng-model="vm.filters.associations"
+            ng-change="vm.handleFunnel('associations')"
+          > Cámaras TIC y Asociaciones
+        </label>
+      </li>
+      <li>
+        <label ng-class="{active: vm.filters.training}">
+          <input
+            type="checkbox"
+            ng-model="vm.filters.training"
+            ng-change="vm.handleFunnel('training')"
+          > Formación/Capacitación
+        </label>
+      </li>
+      <li>
+        <label ng-class="{active: vm.filters.events}">
+          <input
+            type="checkbox"
+            ng-model="vm.filters.events"
+            ng-change="vm.handleFunnel('events')"
+          > Actividades y Eventos
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>

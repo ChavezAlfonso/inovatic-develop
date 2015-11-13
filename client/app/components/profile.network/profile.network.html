@@ -1,0 +1,47 @@
+<div class="line-tabs" ng-if="!vm.countLoading">
+  <a href="" class="line-tabs__tab" ng-click="vm.showFollowers()" ng-class="{active: vm.currentTab === 'followers'}">
+    <stong>{{vm.networkCount.followers}}</stong> Seguidores
+  </a>
+  <a href="" class="line-tabs__tab" ng-click="vm.showFollowing()" ng-class="{active: vm.currentTab === 'following'}">
+    <stong>{{vm.networkCount.following}}</stong> Siguiendo
+  </a>
+</div>
+<div class="profile-network">
+  <p ng-if="vm.loading">Cargando...</p>
+
+  <div class="user-card" ng-repeat="user in vm.followers" ng-if="vm.currentTab === 'followers' && !vm.loading">
+    <div class="user-card__picture" style="background-image: url({{user.picture_url}});"></div>
+    <div class="user-card__main">
+      <h5>{{user.name}}</h5>
+      <div class="user-card__actions">
+        <a href="" ng-click="vm.handleAdd(user)">
+          <span class="icon-plus"></span> Agregar
+        </a>
+        <!-- a href="" ng-click="vm.handleMessage(user)">
+          <span class="icon-message"></span> Mensaje
+        </a -->
+        <a ui-sref="profile({profileId: user.id})">
+          <span class="icon-info"></span> Perfil
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="user-card" ng-repeat="user in vm.following" ng-if="vm.currentTab === 'following' && !vm.loading">
+    <div class="user-card__picture" style="background-image: url({{user.picture_url}});"></div>
+    <div class="user-card__main">
+      <h5>{{user.name}}</h5>
+      <div class="user-card__actions">
+        <a href="" ng-click="vm.handleAdd(user)">
+          <span class="icon-plus"></span> Agregar
+        </a>
+        <!-- a href="" ng-click="vm.handleMessage(user)">
+          <span class="icon-message"></span> Mensaje
+        </a -->
+        <a ui-sref="profile({profileId: user.id})">
+          <span class="icon-info"></span> Perfil
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

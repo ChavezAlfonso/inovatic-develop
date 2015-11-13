@@ -1,0 +1,127 @@
+.onboarding {
+  min-height: 100%;
+  background: url("/assets/onboarding-background.jpg");
+  @include cover-background;
+  margin-top: $gb-offset;
+
+  &__header {
+    padding: 30px 0;
+    background: $white;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
+
+    .icon-logo {
+      color: $red;
+      font-size: 16px;
+    }
+
+    h5 {
+      margin: 0;
+      margin-top: 5px;
+      font-size: 16px;
+      color: $gray;
+      line-height: 26px;
+      font-weight: 100;
+    }
+  }
+
+  &__body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include max-screen-height(780px) {
+      align-items: unset;
+      position: relative;
+      padding: 50px 0;
+    }
+  }
+}
+
+.onboarding-section {
+  flex: 1 100%;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: $white;
+    line-height: 46px;
+    text-align: center;
+  }
+
+  &--search {
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 29px;
+    }
+
+    input {
+      display: block;
+      padding-bottom: 50px;
+      width: 100%;
+      text-align: center;
+      background: transparent;
+      border: 0;
+      font-size: 48px;
+      color: $white;
+      line-height: 79px;
+      opacity: .3;
+      outline: none;
+      @include placeholder {
+        color: $white;
+      }
+
+      &:focus {
+        opacity: 1;
+        @include transition(all .2s ease);
+      }
+    }
+  }
+}
+
+.onbarding-options {
+  text-align: center;
+
+  &__option {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    display: inline-block;
+    margin: 10px;
+    background: rgba(255,255,255,0.20);
+    border: 1px solid rgba(255,255,255,0.50);
+    border-radius: 5px;
+    cursor: pointer;
+    color: $white;
+    @include transition(all .2s ease-in-out);
+
+    &:hover {
+      border-color: $white;
+      background: rgba(255,255,255,0.5);
+    }
+
+    h4 {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      margin: 0;
+      padding: 0 15px 30px;
+      font-size: 14px;
+      color: $white;
+      line-height: 23px;
+    }
+
+    .icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-60%);
+      font-size: 50px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+$z-layers: (
+    "header": 200,
+    "search-details": 150,
+    "map-content": 100,
+    "map": 50,
+) !default;
+
+@function z($layer) {
+    @if not map-has-key($z-layers, $layer) {
+        @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+    }
+    @return map-get($z-layers, $layer);
+}

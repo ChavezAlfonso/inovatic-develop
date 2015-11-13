@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>message</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Public" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Search" sketch:type="MSArtboardGroup" transform="translate(-84.000000, -354.000000)" fill="#9B9B9B">
+            <g id="Results" sketch:type="MSLayerGroup" transform="translate(60.000000, 144.000000)">
+                <g id="Result" transform="translate(0.000000, 99.000000)" sketch:type="MSShapeGroup">
+                    <g id="Actions" transform="translate(0.000000, 100.000000)">
+                        <path d="M30,11 C26.8307767,11 24,13.1334369 24,16.0513883 C24,17.0863592 24.3694369,18.1024854 25.0233495,18.8909903 C25.0509612,19.8150194 24.5121262,21.1402621 24.0267379,22.1056796 C25.3276602,21.8684175 27.1771748,21.3441456 28.0159515,20.8256117 C32.6341165,21.959699 36,19.1065243 36,16.0513592 C36,13.1174175 33.1494466,11 30,11 L30,11 Z" id="message"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
